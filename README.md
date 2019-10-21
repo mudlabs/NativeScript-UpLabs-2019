@@ -1,5 +1,5 @@
 [TypeScript]: https://img.shields.io/badge/TypeScript-%E2%9C%93-007ACC.svg?logo=TypeScript&logoColor=007ACC&labelColor=000000
-[iOS]: https://img.shields.io/badge/apple-%E2%9C%93-949393.svg?logo=apple&logoColor=white
+[iOS]: https://img.shields.io/badge/ios-%E2%9C%93-949393.svg?logo=apple&logoColor=white
 [Android]: https://img.shields.io/badge/android-%E2%9C%93-949393.svg?logo=android&logoColor=white
 
 ![iOS] ![Android] ![TypeScript]
