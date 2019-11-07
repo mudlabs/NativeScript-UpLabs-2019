@@ -1,9 +1,9 @@
 # Spot Maps
 
-These map PNGs are used for **NativeScript-UpLabs-2019**, instead of setting up an actual maps service (i.e. Google Maps).
+These map PNGs are used for **NativeScript-UpLabs-2019**, instead of setting up an actual maps service like Google Maps. Because the private KEYs could not be secured in a Playground app.
 
 - Directory names are the concatenated location _lat_ and _lon_ values, with all non-digit characters removed.
-- Inside each directory is a _1x_, _2x_, and _3x_ PNG map of the location.
+- Inside each directory is a _1x_, _1.5x_, _2x_, _3x_, and _4x_ PNG of the location.
 
 ## Getting the Maps
 
@@ -32,7 +32,7 @@ The process for creating the map images is outlined below.
      ].forEach(e => (e.style.display = "none"));
    })();
    ```
-1. Now log the index value for the current location minus the `/`. This will be the directory name.
+1. Now log the index value for the current location minus the non-digit characters. This will be the directory name for this maps images.
    ```js
    (function logIndexValue(index){
       const array = [coords...];// hard code the coords array here.
@@ -51,16 +51,11 @@ The process for creating the map images is outlined below.
 
 To create the _3_ map images of this location follow the below.
 
+1. Get the location title from the images **Tag**.
+1. Create a new directory with that title here.
 1. Open AdobeXD with a Custom Size workspace.
 1. Create an Artboard at `W:320 x H:420`.
-1. Drag one of the images onto the Artboard.
-1. Scale image to `W:882 x H:459`.
-1. Align bottom of image with botom of Artboard. And centered horizontally.
-1. The OpenStreetMap header should not be visible within the Artboard.
-1. Select the Artboad and export it, `File -> Export -> Selected`.
-1. Specify this directory and save as `map` for`iOS` @ `1x`.
-1. Get the location title from the images **Tag**.
-1. Create a new directory with that title.
-1. Drag the _3_ new images into this directory.
-1. Rename the images `map.1x.png` _(and 2x, 3x)_.
+1. Drag the image onto the Artboard.
+1. Using the `ExportX` plugin, adjust the image _size_ and _position_.
+1. Using the `EportX` plugin, export the images to the correct directory.
 1. Repeat for all the new location you are adding.
