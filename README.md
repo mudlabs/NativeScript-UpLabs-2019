@@ -9,4 +9,4 @@ Project for the 2019 NativeScript and UpLabs competition.
 
 ---
 
-[Playground](https://play.nativescript.org/?template=play-tsc&id=3BRjBO&v=37)
+[Playground](https://play.nativescript.org/?template=play-tsc&id=3BRjBO&v=38)
